@@ -1,0 +1,191 @@
+pre a code
+{ 
+  font-size: small;
+  font-family: courier;
+}
+
+pre
+{ 
+  font-size: small;
+}
+
+code b a
+{ 
+  font-size: small;
+  font-family: courier;
+}
+
+code
+{ 
+  font-size: small;
+}
+
+a code
+{
+  font-size: small; 
+  text-decoration: none; 
+  color: #1f5ba4; 
+  font-family: courier;
+  font-weight: bold;
+}
+
+a 
+{
+  text-decoration: none; 
+  color: #1f5ba4; 
+  font-family: Verdana, Helvetica, sans-serif; 
+  font-weight: bold;
+  font-size: 10pt;
+}
+
+h2
+{ 
+  font-family: Verdana, Helvetica, sans-serif; 
+  font-weight: bold;
+  font-size: medium;
+  color: black;
+}
+
+h3
+{ 
+  font-family: Verdana, Helvetica, sans-serif; 
+  font-weight: bold;
+  font-size: medium;
+  color: #16408b
+}
+
+h4
+{
+  font-family: Verdana, Helvetica, sans-serif; 
+  font-weight: bold;
+  font-size: medium;
+  color: #aa0600;
+}
+
+h4 a
+{
+  font-family: Verdana, Helvetica, sans-serif; 
+  font-weight: bold;
+  font-size: medium;
+  color: #aa0600;
+}
+
+h5
+{
+  font-family: Verdana, Helvetica, sans-serif; 
+  font-weight: bold;
+  font-size: small;
+  color: #aa0600;
+}
+
+h5 a
+{
+  font-family: Verdana, Helvetica, sans-serif; 
+  font-weight: bold;
+  font-size: small;
+  color: #aa0600;
+}
+
+th
+{
+  background-color: #f3f1eb;
+  color: #545454;
+  padding-left: 3px;
+  font-weight: bold; 
+  font-family: "Trebuchet MS", arial, verdana, arial, helvetica; 
+  font-size: 14pt;  
+}
+
+th a
+{
+  font-weight: bold; 
+  font-family: "Trebuchet MS", arial, verdana, arial, helvetica; 
+  font-size: 14pt;  
+}
+
+td
+{
+  font-family: Verdana, Helvetica, sans-serif; 
+  font-size: small;
+}
+
+li
+{
+  font-family: Verdana, Helvetica, sans-serif; 
+  font-size: small;
+}
+
+dd
+{
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: small;
+}
+
+dt
+{
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: small;
+}
+
+p
+{
+  font-family: Verdana, Helvetica, sans-serif; 
+  font-size: small;
+}
+
+span 
+{
+  font-family: Verdana, Helvetica, sans-serif; 
+  font-weight: bold; 
+}
+
+.pi
+{ 
+  color: blue;
+}
+
+.attr 
+{
+  color: #a27a0d;
+}
+
+.attrValue 
+{
+  color: #5394b5;
+}
+
+.comment 
+{
+  color: #c73822;
+}
+
+.element
+{
+  color: #2a4abc;
+}
+
+.content
+{
+  color: #5f5e5a;
+}
+
+.namespace
+{ 
+  color: #9b9841;
+}
+
+tr.TableHeadingColor
+{
+  background-color: #f3f1eb;  
+}
+
+td.NavBarCell1
+{
+  background-color: #f3f1eb;    
+}
+
+font.FrameHeadingFont
+{
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: medium;
+}

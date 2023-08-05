@@ -1,0 +1,11 @@
+Read the http://josql.sourceforge.net/manual/introduction.html user manual for details on how to use JoSQL.
+
+See: 
+
+  http://josql.sourceforge.net/manual/version-changes.html
+
+for details of the latest changes, improvements and fixes.
+
+Usage, ensure that JoSQL-X.Y.jar and 3rd-party-jars/gentlyWEB-utils-X.Y.jar are in your classpath.
+
+Also, please note that JoSQL falls under the Apache V2.0 license (a copy of which is found in this distribution), as does the gentlyWEB software (the jar is in 3rd-party-jars).  Please contact me: barrygently at users.sourceforge.net (Gary) for a copy of the source.  It will soon be released on sourceforge as well (one thing at a time!).
