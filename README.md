@@ -80,7 +80,7 @@ so if the original site goes down that is available.
 
 ## Things I did not do
 * Configure the maven build to do the generation of the query parser. The ant build.xml is
-still in the repo for that purpose but I have not run it.
+still in the repo for that purpose, but I have not run it.
 * Really modernize anything. This is still the same pre-generics Java library it was originally.
 
 ## Why did I do this?
@@ -177,6 +177,14 @@ public class Main {
 
 And isn't that neat? I was also pretty shocked to find that it worked out of the box with
 records considering it predated them by a decade and a half.
+
+Also, [I couldn't find a release of it on maven central](https://mvnrepository.com/search?q=josql). That felt a bit sad
+for a library that seemed genuinely fun to play with.
+
+## Support
+
+While I don't plan to overhaul this library or bring it up to date with modern code style, if anyone wants any changes
+or improvements I am more than willing to take a look or at the very least accept a contribution.
 
 ## Original Readme Contents
 
