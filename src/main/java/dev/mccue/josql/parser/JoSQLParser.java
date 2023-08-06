@@ -1941,7 +1941,7 @@ String MultiName():
                 ;
               }
               token = jj_consume_token(S_DOUBLE);
-                                                                                                      retval = new ConstantExpression (); ce = (ConstantExpression) retval; ce.setValue (new Double (tmp+token.image));
+                                                                                                      retval = new ConstantExpression (); ce = (ConstantExpression) retval; ce.setValue (Double.valueOf (tmp+token.image));
             } else if (jj_2_32(2147483647)) {
               switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
               case 70:
@@ -1965,7 +1965,7 @@ String MultiName():
                 ;
               }
               token = jj_consume_token(S_INTEGER);
-                                                                                                               retval = new ConstantExpression (); ce = (ConstantExpression) retval; ce.setValue (new Double (tmp+token.image));
+                                                                                                               retval = new ConstantExpression (); ce = (ConstantExpression) retval; ce.setValue (Double.valueOf (tmp+token.image));
             } else if (jj_2_33(2)) {
               switch ((jj_ntk==-1)?jj_ntk():jj_ntk) {
               case 70:

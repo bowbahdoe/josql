@@ -18,7 +18,7 @@ import java.util.*;
 
 import java.lang.reflect.Method;
 
-import dev.mccue.gentlyweb.utils.StringUtils;
+import dev.mccue.josql.gentlyweb.utils.StringUtils;
 
 public class Utilities
 {
@@ -850,7 +850,7 @@ public class Utilities
     public static Double getDoubleObject (Object o)
     {
 
-	return new Double (Utilities.getDouble (o));
+	return Double.valueOf (Utilities.getDouble (o));
 
     }
 
@@ -1557,7 +1557,7 @@ public class Utilities
 		if (Short.class.isAssignableFrom (c))
 		{
 
-		    nargs[i] = new Short (arg.shortValue ());
+		    nargs[i] = Short.valueOf (arg.shortValue ());
 
 		    continue;
 
@@ -1575,7 +1575,7 @@ public class Utilities
 		if (Long.class.isAssignableFrom (c))
 		{
 
-		    nargs[i] = new Long (arg.longValue ());
+		    nargs[i] = Long.valueOf (arg.longValue ());
 
 		    continue;
 
@@ -1584,7 +1584,7 @@ public class Utilities
 		if (Float.class.isAssignableFrom (c))
 		{
 
-		    nargs[i] = new Float (arg.floatValue ());
+		    nargs[i] = Float.valueOf (arg.floatValue ());
 
 		    continue;
 
@@ -1593,7 +1593,7 @@ public class Utilities
 		if (Byte.class.isAssignableFrom (c))
 		{
 
-		    nargs[i] = new Byte (arg.byteValue ());
+		    nargs[i] = Byte.valueOf (arg.byteValue ());
 
 		    continue;
 

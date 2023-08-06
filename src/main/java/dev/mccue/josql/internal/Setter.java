@@ -9,7 +9,7 @@ import java.lang.reflect.InvocationTargetException;
 
 import java.util.StringTokenizer;
 
-import dev.mccue.gentlyweb.utils.Getter;
+import dev.mccue.josql.gentlyweb.utils.Getter;
 
 /**
  * This class is used to perform access into a Java object using a 

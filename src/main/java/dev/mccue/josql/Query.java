@@ -491,7 +491,7 @@ public class Query
 	    }
 
 	    this.qd.timings.put (id,
-				 new Double (time));
+				 Double.valueOf (time));
 
 	}
 

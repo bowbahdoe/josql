@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 
-import dev.mccue.gentlyweb.utils.Getter;
+import dev.mccue.josql.gentlyweb.utils.Getter;
 
 import dev.mccue.josql.Query;
 import dev.mccue.josql.QueryResults;

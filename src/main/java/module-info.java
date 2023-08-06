@@ -1,10 +1,9 @@
 module dev.mccue.josql {
     exports dev.mccue.josql;
-
-    requires static java.logging;
-    requires static java.desktop;
-
-
-    requires dev.mccue.gentlyweb.utils;
-
+    exports dev.mccue.josql.filters;
+    exports dev.mccue.josql.incubator;
+    exports dev.mccue.josql.utils;
+    exports dev.mccue.josql.functions;
+    exports dev.mccue.josql.functions.regexp;
+    exports dev.mccue.josql.events;
 }

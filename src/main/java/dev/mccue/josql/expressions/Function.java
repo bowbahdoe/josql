@@ -22,7 +22,7 @@ import java.util.TreeMap;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 
-import dev.mccue.gentlyweb.utils.Getter;
+import dev.mccue.josql.gentlyweb.utils.Getter;
 
 import dev.mccue.josql.Query;
 import dev.mccue.josql.QueryExecutionException;

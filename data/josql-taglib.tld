@@ -27,7 +27,8 @@
       <name>results</name>
       <required>true</required>
       <rtexprvalue>true</rtexprvalue>
-      <description>The name of the attribute that the results should be stored in.  Will be an instance of: org.josql.QueryResults.</description>
+      <description>The name of the attribute that the results should be stored in. Will be an instance of:
+        dev.mccue.josql.QueryResults.</description>
     </attribute>
   </tag>
 </taglib>

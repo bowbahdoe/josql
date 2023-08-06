@@ -14,7 +14,7 @@
  */
 package dev.mccue.josql.filters;
 
-import dev.mccue.gentlyweb.utils.StringUtils;
+import dev.mccue.josql.gentlyweb.utils.StringUtils;
 
 import dev.mccue.josql.Query;
 import dev.mccue.josql.QueryParseException;

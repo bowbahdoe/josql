@@ -22,7 +22,7 @@ import java.util.LinkedHashMap;
 import java.util.Collections;
 import java.util.Comparator;
 
-import dev.mccue.gentlyweb.utils.GeneralComparator;
+import dev.mccue.josql.gentlyweb.utils.GeneralComparator;
 
 import dev.mccue.josql.Query;
 import dev.mccue.josql.QueryExecutionException;

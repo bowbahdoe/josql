@@ -242,14 +242,14 @@ public class ArithmeticExpression extends ValueExpression
 	if (l == null)
 	{
 
-	    l = new Double (0);
+	    l = Double.valueOf (0);
 
 	}
 
 	if (r == null)
 	{
 
-	    r = new Double (0);
+	    r = Double.valueOf (0);
 
 	}
 
@@ -259,28 +259,28 @@ public class ArithmeticExpression extends ValueExpression
 	if (this.type == ArithmeticExpression.ADDITION)
 	{
 
-	    return new Double (ld + rd);
+	    return Double.valueOf (ld + rd);
 
 	}
 
 	if (this.type == ArithmeticExpression.SUBTRACT)
 	{
 
-	    return new Double (ld - rd);
+	    return Double.valueOf (ld - rd);
 
 	}
 
 	if (this.type == ArithmeticExpression.MULTIPLY)
 	{
 
-	    return new Double (ld * rd);
+	    return Double.valueOf (ld * rd);
 
 	}
 
 	if (this.type == ArithmeticExpression.MODULUS)
 	{
 
-	    return new Double (ld % rd);
+	    return Double.valueOf (ld % rd);
 
 	}
 
@@ -290,11 +290,11 @@ public class ArithmeticExpression extends ValueExpression
 	    if (rd == 0)
 	    {
 
-		return new Double (0);
+		return Double.valueOf (0);
 
 	    }
 
-	    return new Double (ld / rd);
+	    return Double.valueOf (ld / rd);
 
 	}
 

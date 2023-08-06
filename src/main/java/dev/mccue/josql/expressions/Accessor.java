@@ -14,7 +14,7 @@
  */
 package dev.mccue.josql.expressions;
 
-import dev.mccue.gentlyweb.utils.Getter;
+import dev.mccue.josql.gentlyweb.utils.Getter;
 
 import dev.mccue.josql.Query;
 import dev.mccue.josql.QueryExecutionException;

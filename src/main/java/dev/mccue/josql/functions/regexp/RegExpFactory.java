@@ -15,21 +15,6 @@ public class RegExpFactory
      */
     public static final String JAVA_INST = "java";
 
-    /**
-     * The instance name to use for the ORO Apache regular expression library.
-     */
-    public static final String ORO_INST = "oro";
-
-    /**
-     * The instance name to use for the GNU regular expression library.
-     */
-    public static final String GNU_INST = "gnu";
-
-    /**
-     * The instance name to use for the Apache RegExp regular expression library.
-     */
-    public static final String APACHE_REGEXP_INST = "apache.regexp";
-
     private String defInst = RegExpFactory.JAVA_INST;
 
     private Map mappings = new HashMap ();
@@ -47,42 +32,6 @@ public class RegExpFactory
 			       StandardJavaRegExpWrapper.class);
 	    this.versions.put (RegExpFactory.JAVA_INST,
 			       j.getSupportedVersion ());
-
-	}
-
-	OroApacheRegExpWrapper o = new OroApacheRegExpWrapper ();
-
-	if (o.isAvailable (q))
-	{
-
-	    this.mappings.put (RegExpFactory.ORO_INST,
-			       OroApacheRegExpWrapper.class);
-	    this.versions.put (RegExpFactory.ORO_INST,
-			       o.getSupportedVersion ());
-
-	}
-
-	GNURegExpWrapper g = new GNURegExpWrapper ();
-
-	if (g.isAvailable (q))
-	{
-
-	    this.mappings.put (RegExpFactory.GNU_INST,
-			       GNURegExpWrapper.class);
- 	    this.versions.put (RegExpFactory.GNU_INST,
-			       g.getSupportedVersion ());
-
-	}
-
-	ApacheRegExpWrapper a = new ApacheRegExpWrapper ();
-
-	if (a.isAvailable (q))
-	{
-
-	    this.mappings.put (RegExpFactory.APACHE_REGEXP_INST,
-			       ApacheRegExpWrapper.class);
- 	    this.versions.put (RegExpFactory.APACHE_REGEXP_INST,
-                               a.getSupportedVersion ());
 
 	}
 

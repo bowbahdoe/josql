@@ -380,7 +380,7 @@ public class ConversionFunctions extends AbstractFunctionHandler
     public Long toMillis (Date d)
     {
 
-	return new Long (d.getTime ());
+	return Long.valueOf (d.getTime ());
 
     }
 
@@ -413,7 +413,7 @@ public class ConversionFunctions extends AbstractFunctionHandler
 
 	    Date d = df.parse (value);
 
-	    return new Long (d.getTime ());
+	    return Long.valueOf (d.getTime ());
 
 	} catch (Exception e) {
 
@@ -493,7 +493,7 @@ public class ConversionFunctions extends AbstractFunctionHandler
 	    try
 	    {
 
-		return new Double ((String) o);
+		return Double.valueOf ((String) o);
 
 	    } catch (Exception e) {
 
@@ -506,7 +506,7 @@ public class ConversionFunctions extends AbstractFunctionHandler
 	if (o instanceof Date)
 	{
 
-	    return new Double (((Date) o).getTime ());
+	    return Double.valueOf (((Date) o).getTime ());
 
 	}
 

@@ -20,8 +20,6 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Comparator;
 
-import dev.mccue.gentlyweb.utils.Getter;
-
 import dev.mccue.josql.QueryExecutionException;
 
 import dev.mccue.josql.internal.Utilities;
@@ -29,6 +27,7 @@ import dev.mccue.josql.internal.Utilities;
 import dev.mccue.josql.expressions.Expression;
 
 import dev.mccue.josql.Query;
+import dev.mccue.josql.gentlyweb.utils.Getter;
 
 public class GroupingFunctions extends AbstractFunctionHandler
 {
@@ -792,14 +791,14 @@ public class GroupingFunctions extends AbstractFunctionHandler
 	   )
 	{
 
-	    return new Double (0);
+	    return Double.valueOf (0);
 
 	}
 
 	double total = this.getTotal (allobjs,
 				      exp);
 
-	Double d = new Double (total);
+	Double d = Double.valueOf (total);
 
 	if ((saveValueName != null)
 	    &&
@@ -946,7 +945,7 @@ public class GroupingFunctions extends AbstractFunctionHandler
 	this.q.setCurrentObject (co);
         this.q.setAllObjects (allobjs);
 
-	return new Double (d);
+	return Double.valueOf (d);
 
     }
 
@@ -972,7 +971,7 @@ public class GroupingFunctions extends AbstractFunctionHandler
 	   )
 	{
 
-	    return new Double (0);
+	    return Double.valueOf (0);
 
 	}
 
@@ -1066,7 +1065,7 @@ public class GroupingFunctions extends AbstractFunctionHandler
         this.q.setCurrentObject (currobj);
         this.q.setAllObjects (allobjs);
 
-	return new Double (d);
+	return Double.valueOf (d);
 
     }
 
@@ -1224,7 +1223,7 @@ public class GroupingFunctions extends AbstractFunctionHandler
 	   )
 	{
 
-	    return new Double (0);
+	    return Double.valueOf (0);
 
 	}
 
@@ -1233,7 +1232,7 @@ public class GroupingFunctions extends AbstractFunctionHandler
 
 	double avg = total / allobjs.size ();
 
-	Double d = new Double (avg);
+	Double d = Double.valueOf (avg);
 
 	if (saveValueName != null)
 	{

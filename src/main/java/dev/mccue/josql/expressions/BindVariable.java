@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.HashMap;
 
-import dev.mccue.gentlyweb.utils.Getter;
+import dev.mccue.josql.gentlyweb.utils.Getter;
 
 import dev.mccue.josql.Query;
 import dev.mccue.josql.QueryExecutionException;

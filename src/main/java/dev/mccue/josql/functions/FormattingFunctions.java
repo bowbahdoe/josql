@@ -19,9 +19,9 @@ import java.util.Date;
 import java.text.SimpleDateFormat;
 import java.text.DecimalFormat;
 
-import dev.mccue.gentlyweb.utils.TimeDuration;
-import dev.mccue.gentlyweb.utils.Timing;
-import dev.mccue.gentlyweb.utils.Getter;
+import dev.mccue.josql.gentlyweb.utils.TimeDuration;
+import dev.mccue.josql.gentlyweb.utils.Timing;
+import dev.mccue.josql.gentlyweb.utils.Getter;
 
 import dev.mccue.josql.Query;
 import dev.mccue.josql.QueryExecutionException;

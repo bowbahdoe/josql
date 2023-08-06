@@ -31,9 +31,9 @@ import org.josql.QueryResults;
 import org.josql.QueryExecutionException;
 import org.josql.QueryParseException;
 
-import org.josql.internal.Utilities;
+import dev.mccue.josql.internal.Utilities;
 
-import org.josql.expressions.SelectItemExpression;
+import dev.mccue.josql.expressions.SelectItemExpression;
 
 public class JoSQLFreeChartCategoryDataset extends Query implements CategoryDataset
 {

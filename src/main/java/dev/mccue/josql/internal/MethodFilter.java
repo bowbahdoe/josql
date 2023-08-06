@@ -20,8 +20,8 @@ import java.util.ArrayList;
 import java.lang.reflect.Method;
 import java.lang.reflect.InvocationTargetException;
 
-import dev.mccue.gentlyweb.utils.GeneralFilter;
-import dev.mccue.gentlyweb.utils.FilterException;
+import dev.mccue.josql.gentlyweb.utils.GeneralFilter;
+import dev.mccue.josql.gentlyweb.utils.FilterException;
 
 public class MethodFilter 
 {

@@ -28,9 +28,9 @@ import org.josql.QueryParseException;
 import org.josql.Query;
 import org.josql.QueryResults;
 
-import org.josql.internal.Utilities;
+import dev.mccue.josql.internal.Utilities;
 
-import org.josql.expressions.SelectItemExpression;
+import dev.mccue.josql.expressions.SelectItemExpression;
 
 /**
  * A table model suitable for use with Swing JTable.

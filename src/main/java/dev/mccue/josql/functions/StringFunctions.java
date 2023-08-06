@@ -89,55 +89,6 @@ public class StringFunctions extends AbstractFunctionHandler
     }
 
     /**
-     * Match a regular expression against the object passed in using the specified regular expression
-     * library, pre-defined library names can be found in: {@link RegExpFactory}.
-     *
-     * @param o The object to match against, <code>toString</code> is called on the object.
-     * @param re The regular expression to match.
-     * @param instName The name of the regular expression library to use.
-     * @return <code>true</code> if the expression matches.
-     * @throws QueryExecutionException If the match cannot be performed, or if the <b>instName</b> 
-     *                                 regular expression library is not available to the {@link RegExpFactory}.
-     */
-    public boolean regexp (Object o,
-			   String re,
-			   String instName)
-	                   throws QueryExecutionException
-    {
-
-        if (this.regExpF == null)
-        {
-            
-            this.initRegExpFactory ();
-            
-        }
-
-	RegExp regexp = this.regExpF.getInstance (instName,
-                                                  this.q);
-
-	if (regexp == null)
-	{
-
-	    throw new QueryExecutionException ("No regular expression library available for: " +
-					       instName);
-
-	}
-
-	if (o == null)
-	{
-
-	    return false;
-
-	}
-
-	String v = o.toString ();
-
-	return regexp.match (re,
-			     v);
-
-    }
-
-    /**
      * <a target="_blank" href="http://www.gnu.org/software/grep/grep.html">grep</a> 
      * through a file, line by line, and determine what matches there are to the nominated
      * String.  Return a List of {@link FileMatch} objects.
@@ -232,53 +183,6 @@ public class StringFunctions extends AbstractFunctionHandler
 	}
 
 	return retData;
-
-    }
-
-    /**
-     * <a target="_blank" href="http://www.gnu.org/software/grep/grep.html">grep</a> 
-     * through a file, line by line, and determine what matches there are to the nominated
-     * regular expression using the specified regular expression implementation.  
-     * Return a List of {@link FileMatch} objects.
-     *
-     * @param f The File to match against.
-     * @param regexp The regular expression to match against each line.  This will use the
-     *               default regular expression library.  In this case the location of the match
-     *               (i.e. {@link FileMatch#getColumn()}) will be -1 since the regular expression
-     *               handling does not support location matching.  Also, {@link FileMatch#getString()}
-     *               will contain the regular expression used.
-     * @param instName The instance name to use.
-     * @return The List of {@link FileMatch} objects.
-     * @throws QueryExecutionException If the default regular expression implementation is not 
-     *                                 available or if the file cannot be read.
-     */
-    public List rgrep (File    f,
-		       String  regexp,
-		       String  instName)
-	               throws  QueryExecutionException
-    {
-
-        if (this.regExpF == null)
-        {
-            
-            this.initRegExpFactory ();
-            
-        }
-
-	RegExp reImpl = this.regExpF.getInstance (instName,
-                                                  this.q);
-
-	if (reImpl == null)
-	{
-
-	    throw new QueryExecutionException ("No default regular expression library available for: " +
-					       instName);
-
-	}
-
-	return this.rgrep (f,
-			   regexp,
-			   reImpl);
 
     }
 

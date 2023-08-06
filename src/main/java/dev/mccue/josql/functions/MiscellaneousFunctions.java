@@ -18,7 +18,7 @@ import java.io.*;
 import java.util.*;
 import java.lang.reflect.*;
 
-import dev.mccue.gentlyweb.utils.Getter;
+import dev.mccue.josql.gentlyweb.utils.Getter;
 
 import dev.mccue.josql.QueryExecutionException;
 
