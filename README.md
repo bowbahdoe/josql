@@ -128,7 +128,7 @@ public enum QueryProcessor implements ValidatingProcessor<Query, QueryParseExcep
         int i = 0;
         for (Object value : stringTemplate.values()) {
             sb.append(fragIter.next());
-            var sym = "G_" + i++;
+            var sym = ":G_" + i++;
             toSet.put(sym, value);
             sb.append(sym);
         }
