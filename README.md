@@ -55,7 +55,22 @@ public class Main {
 [[bob, 10]]
 ```
 
-See [the original documentation on SourceForge](https://josql.sourceforge.net/manual/introduction.html) for more details.
+See [the original documentation on SourceForge](https://josql.sourceforge.net/manual/introduction.html) for more examples.
+This can handle some pretty interesting queries.
+
+```sql 
+SELECT *
+FROM   java.io.File
+WHERE  (name LIKE "%.html"
+        OR
+        name LIKE "%.txt"
+        OR
+        name LIKE "%.xml"
+       )
+AND    lastModified BETWEEN toDate('01-1-2004') AND toDate('31-1-2004')
+AND    length >= 10000
+ORDER BY lastModified DESC, name, length DESC
+```
 
 ## Things I did
 * Repackaged to `dev.mccue.josql`. In the off chance the original library makes a comeback or
