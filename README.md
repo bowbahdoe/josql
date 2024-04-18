@@ -11,7 +11,7 @@ Java library, originally released by [Gary Bently](https://sourceforge.net/u/bar
 <depencency>
   <groupId>dev.mccue</groupId>
   <artifactId>josql</artifactId>
-  <version>0.0.1</version>
+  <version>2023.08.05</version>
 </depencency>
 ```
 
